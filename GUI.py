@@ -3,6 +3,8 @@ from tkinter import ttk as ttk
 
 
 
+
+
 root = tk.Tk()
 root.title("My Smart TV Controler")
 
