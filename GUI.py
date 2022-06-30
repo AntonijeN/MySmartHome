@@ -17,26 +17,27 @@ def notebook():
     text = "Tv u dnevnom boravku",
     bg="blue",
     fg="white",
-    width=20,
+    width=5,
     height=5,
     activebackground="orange",
     font="Helvetica, 14"
     )
 
     tv_dnevni_boravak.grid(row=0, column=0, pady=20)
+    notebook.add(tv_dnevni_boravak, text = "tv_dnevni_boravak")
 
     tv_spavaca_soba = tk.Button(notebook,
     text="Tv u spavacoj sobi",
     bg="blue",
     fg="white",
-    width=20,
+    width=5,
     height=5,
     activebackground="orange",
     font="Helvetica, 14"
     )
 
     tv_spavaca_soba.grid(row=0, column=1, pady=20)
-
+    notebook.add(tv_spavaca_soba, text="tv spavaca soba")
     tv_djecja_soba = tk.Button(notebook,
     text="Tv u djecjoj sobi",
     bg="blue",
@@ -48,7 +49,14 @@ def notebook():
     )
 
     tv_djecja_soba.grid(row=0, column=2, pady=20)
+    notebook.add(tv_djecja_soba, text="Tv djecja soba")
 
+    settings_tab = tk.Button(notebook, 
+    text="settings",
+    bg="blue",
+    width=5,
+    height=5)
+    notebook.add(settings_tab, text="settings")
 def control_frame():
 
     kontrole_frame = tk.Frame(root,
